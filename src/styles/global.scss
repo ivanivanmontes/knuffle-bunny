@@ -1,0 +1,52 @@
+// Define colors
+$pink-bg: #ffb6c1; // Light pink background
+$button-color: #8b0000; // Dark red button color
+$button-hover: #a52a2a; // Slightly lighter red for hover
+
+// Res Page Styling
+.res-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $pink-bg; // Pink background
+  padding: 20px;
+  position: relative; // Needed for absolute positioning of the "No" button
+  overflow: hidden; // Prevents the "No" button from going outside the screen
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; // Dark gray text
+}
+
+.button-group {
+  display: flex;
+  gap: 30px;
+//   position: relative;
+}
+
+/* Default button styling */
+.res-button {
+  background-color: $button-color;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+/* "No" button - Moves to a random position when hovered */
+.no-button {
+  position: absolute;
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out;
+}
