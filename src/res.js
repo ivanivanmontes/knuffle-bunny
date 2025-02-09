@@ -3,22 +3,23 @@ import { useState } from "react";
 
 function Res() {
   const [position, setPosition] = useState({ top: "60%", left: "60%" });
+  const [hoverCount, setHoverCount] = useState(0); // Track hover count
   const navigate = useNavigate();
 
   const moveButton = () => {
+    // Increment hover count
+    setHoverCount((prevCount) => prevCount + 1);
+
+    // Move the button to a new random position
     const randomTop = Math.floor(Math.random() * 80) + 10; // Random % between 10% and 90%
     const randomLeft = Math.floor(Math.random() * 80) + 10; // Random % between 10% and 90%
     setPosition({ top: `${randomTop}%`, left: `${randomLeft}%` });
   };
 
-  // Start OAuth2 Authorization
   const handleAuthorize = () => {
-    // Redirect the browser to the backend's /authorize route
     window.location.href = "https://luna-backend-production-0459.up.railway.app/authorize";
   };
-  
 
-// Create Google Calendar Event
   const handleCreateEvent = async () => {
     const eventDetails = {
       summary: "Team Meeting",
@@ -46,19 +47,10 @@ function Res() {
     }
   };
 
-  
-
-
   const handleYesClick = () => {
-    // console.log("res")
-    handleAuthorize();
-    
-    // navigate("/yes"); // Redirect to /yes
+    // back up option cause google cloud api is dick
+    navigate("/yes"); // Redirect to /yes
   };
-
-  const handleRes = () => {
-    handleCreateEvent();
-  }
 
   return (
     <div className="res-container">
@@ -66,9 +58,6 @@ function Res() {
       <div className="button-group">
         <button className="res-button" onClick={handleYesClick}>
           Yes
-        </button>
-        <button className="res-button" onClick={handleRes}>
-          cafter
         </button>
         <button
           className="res-button no-button"
@@ -78,6 +67,12 @@ function Res() {
           No
         </button>
       </div>
+      {/* Conditionally render the <p> tag if hoverCount >= 3 */}
+      {hoverCount >= 3 && (
+        <p className="hover-warning">
+          why are you trying to click no...
+        </p>
+      )}
     </div>
   );
 }

@@ -50,3 +50,129 @@ h1 {
   position: absolute;
   transition: top 0.2s ease-in-out, left 0.2s ease-in-out;
 }
+
+// Define styling for the "Yes" page container
+.yes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $pink-bg; // Use the same light pink background
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  // Headline styling
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8b0000; // Deep red color for emphasis
+    margin-bottom: 20px;
+  }
+  
+  // Subtitle styling
+  .subtitle {
+    font-size: 1.5rem;
+    color: #333; // Dark gray text for readability
+    margin-bottom: 40px;
+  }
+  
+  // Image animation or decoration
+  .yes-image {
+    width: 250px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  
+  // Button styling
+  .yes-button {
+    background-color: $button-color; // Dark red button
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  
+    &:hover {
+      background-color: $button-hover; // Lighter red on hover
+      transform: scale(1.05); // Slight zoom for a fun hover effect
+    }
+  }
+
+  .landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $pink-bg; // Light pink background
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8b0000; // Deep red for the heading
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #333; // Dark gray text
+    margin-bottom: 40px;
+  }
+  
+  .password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .password-input {
+    width: 300px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #8b0000; // Match the button color
+    border-radius: 8px;
+    outline: none;
+  
+    &:focus {
+      border-color: $button-hover; // Slightly lighter red when focused
+    }
+  }
+  
+  .submit-button {
+    background-color: $button-color;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+  
+  .error-message {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .hover-warning {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #8b0000; // Deep red for emphasis
+    text-align: center;
+  }
+  
+  
