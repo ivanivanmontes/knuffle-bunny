@@ -1,5 +1,4 @@
 import React from "react";
-// import "./styles/global.scss"; // Assuming global.scss includes the above SCSS
 import "./styles/global.scss"
 
 function Res3() {
@@ -16,7 +15,7 @@ function Res3() {
             className="yes-button"
             onClick={sendGCalInvite}
           >
-            See You Soon! 💌
+            Send gcal invite
           </button>
         </div>
       );

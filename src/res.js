@@ -49,7 +49,7 @@ function Res() {
 
   const handleYesClick = () => {
     // back up option cause google cloud api is dick
-    navigate("/yes"); // Redirect to /yes
+    navigate("/yes");
   };
 
   return (
@@ -67,7 +67,6 @@ function Res() {
           No
         </button>
       </div>
-      {/* Conditionally render the <p> tag if hoverCount >= 3 */}
       {hoverCount >= 3 && (
         <p className="hover-warning">
           why are you trying to click no...
