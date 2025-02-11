@@ -34,7 +34,8 @@ const LandingPage = () => {
           Submit
         </button>
       </form>
-      {error && <p className="error-message">{error}</p>} {/* Display error if password is wrong */}
+      {error && <p className="error-message">{error}</p>}{" "}
+      {/* Display error if password is wrong */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Res() {
+function Question() {
   const [position, setPosition] = useState({ top: "60%", left: "60%" });
   const [hoverCount, setHoverCount] = useState(0); // Track hover count
   const navigate = useNavigate();
@@ -17,7 +17,8 @@ function Res() {
   };
 
   const handleAuthorize = () => {
-    window.location.href = "https://luna-backend-production-0459.up.railway.app/authorize";
+    window.location.href =
+      "https://luna-backend-production-0459.up.railway.app/authorize";
   };
 
   const handleCreateEvent = async () => {
@@ -54,26 +55,32 @@ function Res() {
 
   return (
     <div className="res-container">
-      <h1>Question</h1>
+      <h1>Will you be my valentines??? :o</h1>
       <div className="button-group">
         <button className="res-button" onClick={handleYesClick}>
-          Yes
+          Yes!!
         </button>
-        <button
+        {hoverCount <=7 && (
+          <button
           className="res-button no-button"
-          style={{ top: position.top, left: position.left, position: "absolute" }}
+          style={{
+            top: position.top,
+            left: position.left,
+            position: "absolute",
+          }}
           onMouseEnter={moveButton}
         >
-          No
+          No...
         </button>
+        )}
+        
       </div>
-      {hoverCount >= 3 && (
-        <p className="hover-warning">
-          why are you trying to click no...
-        </p>
+      {hoverCount >= 3 && hoverCount < 6 && (
+        <p className="hover-warning">why are you trying to click no...</p>
       )}
+      {hoverCount >= 6 && hoverCount <=7 && <p className="hover-warning">pain :(</p>}
     </div>
   );
 }
 
-export default Res;
+export default Question;

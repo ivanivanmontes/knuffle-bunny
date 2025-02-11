@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/global.scss"
 
-function Res3() {
+function Yes() {
 
     const sendGCalInvite = () => {
         //TODO: we gonna be mad ghetto and do this manually LMAO
@@ -9,16 +9,20 @@ function Res3() {
 
     return (
         <div className="yes-container">
-          <h1>Yoooooo lets goo</h1>
-          <p className="subtitle">res</p>
+          <h1>YAYYYYYYY</h1>
+          <img
+          src="https://ffsvgv.csb.app/assets/images/togepi-and-pikachu.gif"
+          className="gif"
+          />
+          <p className="subtitle">Thanks for being my valentines!</p>
           <button
             className="yes-button"
             onClick={sendGCalInvite}
           >
-            Send gcal invite
+            Send gcal invite for more deets
           </button>
         </div>
       );
 
 }
-export default Res3;
+export default Yes;
