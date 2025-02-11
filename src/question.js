@@ -57,32 +57,33 @@ function Question() {
     <div className="res-container">
       <h1>Will you be my valentines??? :o</h1>
       <img
-          src="https://ffsvgv.csb.app/assets/images/togepi-love.gif"
-          className="gif"
-          />
+        src="https://ffsvgv.csb.app/assets/images/togepi-love.gif"
+        className="gif"
+      />
       <div className="button-group">
         <button className="res-button" onClick={handleYesClick}>
           Yes!!
         </button>
-        {hoverCount <=7 && (
+        {hoverCount <= 7 && (
           <button
-          className="res-button no-button"
-          style={{
-            top: position.top,
-            left: position.left,
-            position: "absolute",
-          }}
-          onMouseEnter={moveButton}
-        >
-          No...
-        </button>
+            className="res-button no-button"
+            style={{
+              top: position.top,
+              left: position.left,
+              position: "absolute",
+            }}
+            onMouseEnter={moveButton}
+          >
+            No...
+          </button>
         )}
-        
       </div>
       {hoverCount >= 3 && hoverCount < 6 && (
         <p className="hover-warning">why are you trying to click no...</p>
       )}
-      {hoverCount >= 6 && hoverCount <=7 && <p className="hover-warning">pain :(</p>}
+      {hoverCount >= 6 && hoverCount <= 7 && (
+        <p className="hover-warning">pain :(</p>
+      )}
     </div>
   );
 }
