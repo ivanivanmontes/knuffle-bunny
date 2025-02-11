@@ -3,10 +3,19 @@ import "./styles/global.scss"
 
 function Yes() {
 
-    const sendGCalInvite = () => {
-        //TODO: we gonna be mad ghetto and do this manually LMAO
-      console.log("click was yes")
-    }
+    const sendGCalInvite = async () => {
+      try {
+        const response = await fetch("https://luna-backend-production-0459.up.railway.app/invite", {
+          method: "GET"
+        })
+        const data = response.json();
+        console.log(data)
+        alert(data)
+        
+      } catch (error) {
+        console.error(error)
+      }
+    };
 
     return (
         <div className="yes-container">

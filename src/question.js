@@ -56,6 +56,10 @@ function Question() {
   return (
     <div className="res-container">
       <h1>Will you be my valentines??? :o</h1>
+      <img
+          src="https://ffsvgv.csb.app/assets/images/togepi-love.gif"
+          className="gif"
+          />
       <div className="button-group">
         <button className="res-button" onClick={handleYesClick}>
           Yes!!
