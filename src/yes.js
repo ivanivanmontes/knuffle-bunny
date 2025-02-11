@@ -5,6 +5,7 @@ function Yes() {
 
     const sendGCalInvite = () => {
         //TODO: we gonna be mad ghetto and do this manually LMAO
+      console.log("click was yes")
     }
 
     return (
