@@ -10,7 +10,7 @@ function Yes() {
         })
         const data = response.json();
         console.log(data)
-        alert(data)
+        alert("invite sent!!!")
         
       } catch (error) {
         console.error(error)
