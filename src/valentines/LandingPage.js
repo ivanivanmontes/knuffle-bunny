@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/global.scss";
+import "../styles/valentines.scss";
 
 const LandingPage = () => {
   const [password, setPassword] = useState("");
@@ -20,7 +20,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
-      <h1>Are you Jeanette Marie Luna?</h1>
+      <h1 className="h1-tag">Are you Jeanette Marie Luna?</h1>
       <p className="subtitle">If so, enter the password to continue :p</p>
       <form onSubmit={handleSubmit} className="password-form">
         <input

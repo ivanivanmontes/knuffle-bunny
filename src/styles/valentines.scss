@@ -1,3 +1,5 @@
+// this scss is badily formatted and showed not be followed as example
+
 // Define colors
 $pink-bg: #ffb6c1; // Light pink background
 $button-color: #8b0000; // Dark red button color
@@ -16,12 +18,12 @@ $button-hover: #a52a2a; // Slightly lighter red for hover
   overflow: hidden;
 }
 
-h1 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333; // Dark gray text
-}
+// h1 {
+//   margin-bottom: 40px;
+//   font-size: 2.5rem;
+//   font-weight: bold;
+//   color: #333; // Dark gray text
+// }
 
 .button-group {
   display: flex;
@@ -72,12 +74,12 @@ h1 {
 }
 
 // Headline styling
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #8b0000; // Deep red color for emphasis
-  margin-bottom: 20px;
-}
+// h1 {
+//   font-size: 3rem;
+//   font-weight: bold;
+//   color: #8b0000; // Deep red color for emphasis
+//   margin-bottom: 20px;
+// }
 
 // Subtitle styling
 .subtitle {
@@ -123,7 +125,7 @@ h1 {
   padding: 20px;
 }
 
-h1 {
+.h1-tag {
   font-size: 3rem;
   font-weight: bold;
   color: #8b0000; // Deep red for the heading

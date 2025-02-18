@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "../styles/valentines.scss";
 
 function Question() {
   const [position, setPosition] = useState({ top: "60%", left: "60%" });
@@ -21,7 +22,7 @@ function Question() {
 
   return (
     <div className="res-container">
-      <h1>Will you be my valentines??? :o</h1>
+      <h1 className="h1-tag">Will you be my valentines??? :o</h1>
       <img
         src="https://ffsvgv.csb.app/assets/images/togepi-love.gif"
         className="gif"
