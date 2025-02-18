@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from "./styles/BoxContainer.module.scss";
+import styles from "../styles/BoxContainer.module.scss";
 
 const BoxContainer = ({ imageSrc, buttonText, navigateTo }) => {
   const navigate = useNavigate();

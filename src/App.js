@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Question from "./valentines/question";
 import Yes from "./valentines/yes";
 import LandingPage from "./valentines/LandingPage";
-import MainPage from "./mainPage";
+import MainPage from "./mainPage/mainPage";
 import GitHubLink from "./link";
 
 function App() {

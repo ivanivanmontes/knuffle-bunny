@@ -1,6 +1,6 @@
 import React from "react";
 import BoxContainer from "./BoxContainer";
-import "./styles/mainPage.scss";
+import "../styles/mainPage.scss";
 
 
 const MainPage = () => {
