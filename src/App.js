@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Question from "./question";
-import Yes from "./yes";
-import LandingPage from "./LandingPage";
+import Question from "./valentines/question";
+import Yes from "./valentines/yes";
+import LandingPage from "./valentines/LandingPage";
+import MainPage from "./mainPage";
 import GitHubLink from "./link";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<MainPage />} /> 
+        <Route path="/valentines" element={<LandingPage />} />
         <Route path="/question" element={<Question />} />
         <Route path="/yes" element={<Yes />} />
       </Routes>

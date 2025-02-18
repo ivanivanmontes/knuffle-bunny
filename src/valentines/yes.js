@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./styles/global.scss";
+import "../styles/valentines.scss";
 
-function Yes() {
+const Yes = () => {
   const [click, setClick] = useState(false);
 
   const sendGCalInvite = async () => {
@@ -13,6 +13,7 @@ function Yes() {
           method: "GET",
         },
       );
+      console.log(response)
     } catch (error) {
       console.error(error);
     }
@@ -20,7 +21,7 @@ function Yes() {
 
   return (
     <div className="yes-container">
-      <h1>YAYYYYYYY</h1>
+      <h1 className="h1-tag">YAYYYYYYY</h1>
       <img
         src="https://ffsvgv.csb.app/assets/images/togepi-and-pikachu.gif"
         className="gif"
