@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./styles/global.scss";
+import "../styles/global.scss";
 
 const LandingPage = () => {
   const [password, setPassword] = useState("");

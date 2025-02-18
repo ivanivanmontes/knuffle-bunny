@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/global.scss";
+import "../styles/global.scss";
 
 function Yes() {
   const [click, setClick] = useState(false);
@@ -13,6 +13,7 @@ function Yes() {
           method: "GET",
         },
       );
+      console.log(response)
     } catch (error) {
       console.error(error);
     }
