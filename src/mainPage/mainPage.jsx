@@ -6,7 +6,7 @@ import "../styles/mainPage.scss";
 const MainPage = () => {
   return (
     <div className="main-page">
-      <h1>Res</h1>
+      <h1>res</h1>
       <div className="box-grid">
         <BoxContainer
           imageSrc="../valentinesScreen.png"
